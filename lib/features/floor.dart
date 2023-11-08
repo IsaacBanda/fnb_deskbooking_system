@@ -326,6 +326,8 @@ class _FloorScreenState extends State<FloorScreen> {
   Widget build(BuildContext context) {
     double sbWidth = MediaQuery.of(context).size.width * 0.7;
     double sbHeight = MediaQuery.of(context).size.height * 0.9;
+    String BuildingName = widget.buildingName;
+    int floorNumber =  widget.floorId;
 
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
@@ -336,6 +338,9 @@ class _FloorScreenState extends State<FloorScreen> {
             CustomNavigationBarFloor(
               token: widget.token,
               refreshToken: widget.myRefreshToken,
+            BuildingName : BuildingName,
+            floorNumber : floorNumber,
+
               onLogoutSuccess: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(

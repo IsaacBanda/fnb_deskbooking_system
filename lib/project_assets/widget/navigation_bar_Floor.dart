@@ -8,12 +8,15 @@ class CustomNavigationBarFloor extends StatelessWidget {
   final String token;
   final String refreshToken;
   final Function onLogoutSuccess;
+  final String BuildingName;
+  final int floorNumber;
 
   CustomNavigationBarFloor({
     required this.token,
     required this.refreshToken,
     required this.onLogoutSuccess,
-    Key? key,
+    Key? key, required  this.BuildingName,
+    required this.floorNumber,
   }) : super(key: key);
 
   @override
@@ -31,7 +34,7 @@ class CustomNavigationBarFloor extends StatelessWidget {
           ),
           Center(
             child: Text(
-              'Lunga > Floor 1', // Your center text here
+              '$BuildingName  > Floor $floorNumber', // Your center text here
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 14,
