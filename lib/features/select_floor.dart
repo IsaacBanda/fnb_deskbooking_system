@@ -128,7 +128,7 @@ class _SelectFloorScreenState extends State<SelectFloorScreen> {
                               token: widget.token,
                               floorId: floor.floorId,
                               myRefreshToken: widget.myRefreshToken,
-                             // buildingNamef: widget.buildingName
+                              buildingName: widget.buildingName
                             ),
                           ),
                         );

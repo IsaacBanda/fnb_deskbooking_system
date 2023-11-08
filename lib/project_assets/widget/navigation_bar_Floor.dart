@@ -4,12 +4,12 @@ import 'package:fnb_deskbooking_system/exports/export.dart';
 import 'package:fnb_deskbooking_system/features/building.dart';
 import 'package:fnb_deskbooking_system/features/historty.dart';
 
-class CustomNavigationBar extends StatelessWidget {
+class CustomNavigationBarFloor extends StatelessWidget {
   final String token;
   final String refreshToken;
   final Function onLogoutSuccess;
 
-  CustomNavigationBar({
+  CustomNavigationBarFloor({
     required this.token,
     required this.refreshToken,
     required this.onLogoutSuccess,

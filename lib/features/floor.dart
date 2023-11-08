@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:fnb_deskbooking_system/project_assets/widget/navigation_bar_Floor.dart';
+
 import '../model/GetResponse/GetResponse.dart';
 import '../project_assets/utils/DateFormatter.dart';
 import '/exports/export.dart';
@@ -12,15 +14,14 @@ class FloorScreen extends StatefulWidget {
   final String token; // Add this parameter
   final int floorId; // Add this parameter
   final String myRefreshToken; // New parameter
-//  final String buildingNamef; // New parameter
+  final String buildingName; // New parameter
 
 
   const FloorScreen({
     Key? key,
     required this.token,
     required this.floorId,
-    required this.myRefreshToken,
-  //  required this.buildingNamef
+    required this.myRefreshToken, required  this.buildingName,
   }) : super(key: key);
 
   @override
@@ -332,7 +333,7 @@ class _FloorScreenState extends State<FloorScreen> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            CustomNavigationBar(
+            CustomNavigationBarFloor(
               token: widget.token,
               refreshToken: widget.myRefreshToken,
               onLogoutSuccess: () {

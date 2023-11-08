@@ -84,6 +84,7 @@ class _BookingDetailsScreenState extends State<BookingDetailsScreen> {
               token: widget.token,
               floorId: widget.floorId,
               myRefreshToken: widget.myRefreshToken,
+                buildingName : "", //// this parameter needs to be passed correctly
 
             ),
           ),
