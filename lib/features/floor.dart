@@ -4454,6 +4454,15 @@ class _FloorScreenState extends State<FloorScreen> {
                       ),
                     ),
                   ),
+
+
+                  /// This part must contain a container for displaying building name and FLoor
+
+
+
+
+
+
                   Container(
                     width: MediaQuery.of(context).size.width * 0.2,
                     height: MediaQuery.of(context).size.height * 0.9,
