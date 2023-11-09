@@ -29,16 +29,16 @@ class CustomNavigationBar extends StatelessWidget {
             width: 150,
             child: SvgPicture.asset(AppIcons.fnb_logo),
           ),
-          Center(
-            child: Text(
-              'Lunga > Floor 1', // Your center text here
-              style: TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 14,
-                color: AppColors.white,
-              ),
-            ),
-          ),
+          // Center(
+          //   child: Text(
+          //     'Lunga > Floor 1', // Your center text here
+          //     style: TextStyle(
+          //       fontWeight: FontWeight.w600,
+          //       fontSize: 14,
+          //       color: AppColors.white,
+          //     ),
+          //   ),
+          // ),
           Spacer(),
           GestureDetector(
             onTap: () {
